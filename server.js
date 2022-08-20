@@ -3,7 +3,7 @@ var osu = require('node-os-utils')
 
 var app = require('express')();
 var http = require('http').createServer(app);
-const PORT = 8080;
+const PORT = 8080 || 6000 || 9000 || 6987 || 80;
 
 //handle cors as server and client in different domain/port
 const io = require("socket.io")(http, {
